@@ -19,7 +19,7 @@ import React from "react";
  * Need an image? Check out https://unsplash.com to download a photo you
  * freely use on your site.
  */
-import image from "../images/design-desk.jpeg";
+import image from "../images/photo-1496171367470-9ed9a91ea931.avif";
 
 const imageAltText = "desktop with books and laptop";
 
@@ -31,28 +31,25 @@ const imageAltText = "desktop with books and laptop";
  */
 const projectList = [
   {
-    title: "10 Things To Know About Azure Static Web Apps 🎉",
-    description:
-      "Collaboration to create a beginner friendly article to help explain Azure Static Web Apps and tooling to get started.",
-    url: "https://dev.to/azure/10-things-to-know-about-azure-static-web-apps-3n4i",
+    title: "Medicine-Donation Website",
+    description: `Users will be able to easily list the medicines they want to donate along 
+      with details like the name of the medicine, its expiration, quantity, 
+      location etc. `,
   },
   {
-    title: "Web Development for Beginners",
-    description:
-      "Contributed sketch note imagery to accompany each lesson. These help provide visual representation of what is being taught.",
-    url: "https://github.com/microsoft/web-dev-for-beginners",
+    title: "Blogging Website",
+    description: `It provides a user-friendly interface for both writers and readers, with 
+features for content creation, customization, and community 
+engagement.`,
   },
   {
-    title: "My Resume Site",
-    description:
-      "Created from Microsoft's resume workshop and deployed to GitHub pages. Includes my experience and design abilities.",
-    url: "https://github.com/microsoft/workshop-library/tree/main/full/build-resume-website",
+    title: "Meme Generator",
+    description: `Easily create and customize hilarious memes using our intuitive platform. Share laughs and spread joy with just a few clicks`,
   },
   {
-    title: "GitHub Codespaces and github.dev",
+    title: "YelpCamp",
     description:
-      "Video interview to explain when to use GitHub.dev versus GitHub Codespaces, and how best to use each tool.",
-    url: "https://www.youtube.com/watch?v=c3hHhRME_XI",
+      "It is a campground review platform allowing users to share and discover camping experiences.",
   },
 ];
 
@@ -71,9 +68,7 @@ const Portfolio = () => {
         <div className="container">
           {projectList.map((project) => (
             <div className="box" key={project.title}>
-              <a href={project.url} target="_blank" rel="noopener noreferrer">
-                <h3 style={{ flexBasis: "40px" }}>{project.title}</h3>
-              </a>
+              <h3 style={{ flexBasis: "40px" }}>{project.title}</h3>
               <p className="small">{project.description}</p>
             </div>
           ))}

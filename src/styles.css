@@ -90,7 +90,7 @@ li {
 }
 
 li::marker {
-  color: #4e567e;
+  color: #001b37;
 }
 
 a {
@@ -107,6 +107,7 @@ a:hover {
   grid-gap: 20px;
   grid-template-columns: 330px 300px;
   margin: 20px auto;
+  cursor: pointer;
 }
 
 .container .box {
@@ -122,4 +123,13 @@ a:hover {
 img.socialIcon {
   height: 30px;
   width: 30px;
+}
+
+.topName {
+  color: white;
+}
+
+.topTitle {
+  color: white;
+  margin-top: 20px;
 }
